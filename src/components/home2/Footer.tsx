@@ -131,8 +131,8 @@ const HomeFooter = () => {
 
                     <div className="flex flex-col items-start">
                         <div className="flex gap-2.5">
-                            {["Instagram", "Twitter", "LinkedIn"].map((platform) => (
-                                <span className="bg-[#343e38a4] px-3 py-[11px] rounded-full relative z-50">
+                            {["Instagram", "Twitter", "LinkedIn"].map((platform , index) => (
+                                <span key={index} className="bg-[#343e38a4] px-3 py-[11px] rounded-full relative z-50">
                                     <svg
                                         className="h-5 w-5"
                                         fill="currentColor"

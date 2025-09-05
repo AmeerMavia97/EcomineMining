@@ -121,7 +121,7 @@ const MiningHeroSlider = () => {
                             <h3 className="text-[34px] tracking-tighter font-[500] italic">Turnkey Solution</h3>
                         </span>
                         <p className="text-[15px] w-[40%] leading-[20px]">Your solution for buying, selling, and mining cryptocurrencies</p>
-                        <button className="w-max mt-2 bg-green-500 font-[600] text-[15px] rounded-full px-8 py-2.5">Let's Start</button>
+                        <button className="w-max mt-2 bg-green-500 font-[600] text-[15px] rounded-full px-8 py-2.5">Let&apos;s Start</button>
                     </div>
                 </div>
                 <div className="flex items-center mt-14 relative !z-50">
