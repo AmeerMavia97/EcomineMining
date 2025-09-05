@@ -94,8 +94,8 @@ const MiningHeroSlider = () => {
                                   <div className='absolute overflow-hidden bg-[#22c55e] -right-10 top-30 blur-[139px]  h-[350px] w-[208px]'></div>
 
 
-                                {["Instagram", "Twitter", "LinkedIn"].map((platform) => (
-                                    <span className="bg-[#5e7467a4] px-3 py-[11px] rounded-full relative z-50">
+                                {["Instagram", "Twitter", "LinkedIn"].map((platform , index) => (
+                                    <span key={index} className="bg-[#5e7467a4] px-3 py-[11px] rounded-full relative z-50">
                                         <svg
                                             className="h-5 w-5"
                                             fill="currentColor"
