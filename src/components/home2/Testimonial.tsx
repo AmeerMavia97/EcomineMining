@@ -26,7 +26,7 @@ const ITEMS: Testimonial[] = [
         name: "Liam Chen",
         first: "Liam",
         last: "Chen",
-        avatar: "/Testi2.webp",
+        avatar: "/Testi3.webp",
         text:
             "I've bought all my miners with them and never experienced any problem. The logistic and shipping was fast.",
         stars: 5,
@@ -35,7 +35,7 @@ const ITEMS: Testimonial[] = [
         name: "Noah Bennett",
         first: "Noah",
         last: "Bennett",
-        avatar: "/Testi3.webp",
+        avatar: "/Testi2.webp",
         text:
             "One of the best mining companies I've seen. Perfect for my investments and my portfolio. Thanks a lot!",
         stars: 5,
