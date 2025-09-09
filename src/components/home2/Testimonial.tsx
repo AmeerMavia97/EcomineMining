@@ -14,34 +14,34 @@ type Testimonial = {
 
 const ITEMS: Testimonial[] = [
     {
-        name: "Paul Bouvil",
-        first: "Paul",
-        last: "Bouvil",
+        name: "Ethan Ramirez",
+        first: "Ethan",
+        last: "Ramirez",
         avatar: "/Testi1.jpg",
         text:
             "Top customer service! I was able to mine my first BTC quickly thanks to their advice and expertise. A company you can trust!",
         stars: 5,
     },
     {
-        name: "Patrick Stone",
-        first: "Patrick",
-        last: "Stone",
+        name: "Liam Chen",
+        first: "Liam",
+        last: "Chen",
         avatar: "/Testi2.webp",
         text:
             "I've bought all my miners with them and never experienced any problem. The logistic and shipping was fast.",
         stars: 5,
     },
     {
-        name: "Victor Belloc",
-        first: "Victor",
-        last: "Belloc",
+        name: "Noah Bennett",
+        first: "Noah",
+        last: "Bennett",
         avatar: "/Testi3.webp",
         text:
             "One of the best mining companies I've seen. Perfect for my investments and my portfolio. Thanks a lot!",
         stars: 5,
     },
-    
 ];
+
 
 const GAP = 34;
 
