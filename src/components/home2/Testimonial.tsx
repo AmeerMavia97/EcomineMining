@@ -26,7 +26,7 @@ const ITEMS: Testimonial[] = [
         name: "Patrick Stone",
         first: "Patrick",
         last: "Stone",
-        avatar: "/Testi2.jpg",
+        avatar: "/Testi2.webp",
         text:
             "I've bought all my miners with them and never experienced any problem. The logistic and shipping was fast.",
         stars: 5,
@@ -40,15 +40,7 @@ const ITEMS: Testimonial[] = [
             "One of the best mining companies I've seen. Perfect for my investments and my portfolio. Thanks a lot!",
         stars: 5,
     },
-    {
-        name: "Victor Belloc",
-        first: "Victor",
-        last: "Belloc",
-        avatar: "/Testi4.webp",
-        text:
-            "One of the best mining companies I've seen. Perfect for my investments and my portfolio. Thanks a lot!",
-        stars: 5,
-    },
+    
 ];
 
 const GAP = 34;

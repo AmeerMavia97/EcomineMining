@@ -153,7 +153,7 @@ const HomeFooter = () => {
 
                         </div>
                         <div>
-                            <h1 className="font-[600] text-[15.5px] mt-4 text-white">contact@ymirhosting.com</h1>
+                            <h1 className="font-[600] text-[15.5px] mt-4 text-white">info@ecominex.com</h1>
                         </div>
                     </div>
                 </div>

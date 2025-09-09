@@ -13,6 +13,7 @@ import StrategicSection from "../home2/StrategicSection";
 import PhotoStrip from "../home2/FollowUs";
 import FAQSection from "../home2/FaqSection";
 import Testimonials from "../home2/Testimonial";
+import HomeContactSection from "../home2/ContactSection";
 
 function LandingHome() {
   return (
@@ -33,7 +34,9 @@ function LandingHome() {
         <Testimonials></Testimonials>
 
         <PhotoStrip />
+        <HomeContactSection></HomeContactSection>
 
+        
         {/* <HeroSection />
       <SolutionCard/>
       <ModernAboutSegments/>

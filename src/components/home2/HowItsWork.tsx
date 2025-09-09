@@ -5,29 +5,29 @@ type Step = { title: string; body: string };
 
 const STEPS: Step[] = [
     {
-        title: "Book a call with an advisor to define your goals",
+        title: "Book a Call with an Advisor",
         body:
-            "First of all, let's take the time to talk. Book a call with one of our specialist advisors to clearly define your objectives and answer any questions you may have.",
+            "First, let’s talk. Book a call with one of our specialist advisors to define your goals and answer all your questions",
     },
     {
-        title: "Choosing & ordering your machines",
+        title: "Choose Your Machines ",
         body:
-            "We guide you in choosing the best machines for your project. Once you've made your choice, we'll take care of the rest.",
+            "We’ll guide you in selecting the best mining machines. Once you decide, we handle everything else.",
     },
     {
-        title: "Your machines are on their way",
+        title: "Purchase Your Machines",
         body:
-            "Your machines are on their way! Delivery times vary by country, and we'll keep you informed at every stage.",
+            "Secure your investment with a seamless purchase process. Simple, transparent, and fully protected—so you can focus on results, not paperwork",
     },
     {
-        title: "Setting up & configuring your machines",
+        title: "Setup & Configuration",
         body:
-            "Our team takes care of everything—from installation to configuration—so your machines are up and running quickly.",
+            "Our team installs and configures your machines in less than 48 hours. You’ll be mining with optimal performance right from the start.",
     },
     {
-        title: "Stay informed in real time about performance",
+        title: "Track & Earn in Real Time",
         body:
-            "Track your machines’ performance with our real-time interactive dashboard and relax while we monitor.",
+            "Stay informed with your personal dashboard. Monitor performance in real time while we manage operations and you collect profits.",
     },
 ];
 
@@ -58,7 +58,7 @@ function StepCard({
                 
             </span>
 
-            <h3 className="relative z-10 mb-3 text-[19px] w-[80%] font-extrabold leading-tight text-[#f5f5f5]">
+            <h3 className="relative z-10 mb-3 text-[23px] w-[80%] font-extrabold leading-tight text-[#f5f5f5]">
                 {step.title}
             </h3>
             <p className="relative z-10 text-[13.2px] leading-[17px] text-[#b3b3b3]">

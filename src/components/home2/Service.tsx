@@ -3,6 +3,7 @@ import Image from "next/image";
 type Card = {
     titleTop: string;
     titleBottom: string;
+    description: string;
     bullets: { title: string; body: string }[];
     bgImg: string; // path in /public
 };
@@ -11,9 +12,10 @@ const CARDS: Card[] = [
     {
         titleTop: "Hosting",
         titleBottom: "services",
+        description: "Host your equipment at EcomineX facilities. Secure premises with 24/7 monitoring and on-site experts. We manage everything: installation, maintenance, and repairs.",
         bullets: [
             {
-                title: "Host your equipment at Ymir sites",
+                title: "Host your equipment at EcomineX sites",
                 body:
                     "In secure premises, with a team of experts available on site 7 days a week.",
             },
@@ -28,6 +30,7 @@ const CARDS: Card[] = [
     {
         titleTop: "Purchase of",
         titleBottom: "machines",
+        description:"Choose your machine and complete your purchase securely on our platform",
         bullets: [
             {
                 title: "A simplified purchasing process",
@@ -37,14 +40,15 @@ const CARDS: Card[] = [
             {
                 title: "Fast delivery and installation",
                 body:
-                    "Have you chosen your machines? Ymir will take care of delivery, customs clearance and installation.",
+                    "Have you chosen your machines? EcomineX will take care of delivery, customs clearance and installation.",
             },
         ],
         bgImg: "/Purchases-of-machines.png.webp",
     },
     {
-        titleTop: "Whole",
-        titleBottom: "container",
+        titleTop: "Updates & Take ",
+        titleBottom: "Profit ",
+        description: "Get live updates in your EcomineX account dashboard. Track machine performance and receive profits directly.",
         bullets: [
             {
                 title: "Your own infrastructure",
@@ -54,7 +58,7 @@ const CARDS: Card[] = [
             {
                 title: "Maximum autonomy, guaranteed performance",
                 body:
-                    "You control your production from A to Z, with technical support from Ymir Hosting.",
+                    "You control your production from A to Z, with technical support from EcomineX Hosting.",
             },
         ],
         bgImg: "/container.png.webp",
@@ -78,7 +82,7 @@ export default function ServicesSection() {
                     {CARDS.map((card, i) => (
                         <article
                             key={i}
-                            className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-[#1a1a1a] to-[#111] py-12 px-9 shadow-[0_8px_30px_rgb(0,0,0,0.3)] "
+                            className="relative overflow-hidden rounded-3xl h-[350px] bg-gradient-to-b from-[#1a1a1a] to-[#111] py-12 px-9 shadow-[0_8px_30px_rgb(0,0,0,0.3)] "
                         >
                             <div>
                                 <img className="absolute -right-20 top-14 opacity-25" src={card.bgImg} alt="" />
@@ -88,21 +92,21 @@ export default function ServicesSection() {
 
 
                             <h3 className="relative z-10 mb-4 leading-tight  font-extrabold tracking-tight text-white">
-                                <span className="block text-[32px] leading-[27px]">{card.titleTop} </span>
+                                <span className="block text-[32px] leading-[36px] ">{card.titleTop} </span>
                                 <span className="block text-[32px] text-green-500">{card.titleBottom}</span>
                             </h3>
 
                             <ul className="relative z-10 space-y-4">
-                                {card.bullets.map((b, j) => (
-                                    <li key={j} className="pl-5">
+                                {/* {card.bullets.map((b, j) => ( */}
+                                    <li className="pl-0">
                                         {/* green dot */}
-                                        <span className="absolute ml-[-18px] mt-3 inline-block h-1.5 w-1.5 rounded-full bg-green-500" />
+                                        {/* <span className="absolute ml-[-18px] mt-3 inline-block h-1.5 w-1.5 rounded-full bg-green-500" />
                                         <p className="text-white text-[16px] font-semibold mb-2 leading-[19px]">
                                             {b.title}
-                                        </p>
-                                        <p className="text-gray-300 leading-snug text-[12.5px]">{b.body}</p>
+                                        </p> */}
+                                        <p className="text-gray-300 leading-snug text-[12.5px]">{card.description}</p>
                                     </li>
-                                ))}
+                                {/* ))} */}
                             </ul>
                         </article>
                     ))}

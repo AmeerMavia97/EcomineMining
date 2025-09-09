@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
@@ -17,6 +17,14 @@ export default function Carousel() {
     const nextSlide = () => {
         setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+        }, 4000); 
+
+        return () => clearInterval(interval); 
+    }, []);
 
     return (
         <div className="relative w-max abol" >

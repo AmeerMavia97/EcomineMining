@@ -83,6 +83,8 @@ const MiningHeroSlider = () => {
         }
     };
 
+    
+
     return (
         <>
             <section className=" py-20">
@@ -144,8 +146,8 @@ const MiningHeroSlider = () => {
                             <p className="font-[400] text-[#d5d5d5] text-[13.5px] w-[80%]  leading-[18px]">An ever-expanding portfolio of data centers.</p>
                         </div>
                         <div className="bg-[#292929]  py-5.5 rounded-[10px] pl-6 flex flex-col justify-center">
-                            <h3 className="text-green-500 font-[550] leading-[38px] text-[30px]">5000</h3>
-                            <h6 className="font-[550] text-white text-[16.5px] leading-[34px]">Miners Sold</h6>
+                            <h3 className="text-green-500 font-[550] leading-[38px] text-[30px]">20,000+</h3>
+                            <h6 className="font-[550] text-white text-[16.5px] leading-[34px]"> Machines Sold</h6>
                             <p className="font-[400] text-[#d5d5d5] text-[13.5px] w-[80%]  leading-[18px]">We sell and deliver worldwide</p>
                         </div>
                     </div>

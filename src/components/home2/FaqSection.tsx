@@ -10,7 +10,7 @@ const FAQS: QA[] = [
         a: "Mining secures a blockchain by validating new blocks of transactions. ASIC/GPUs compete to find a cryptographic nonce; the winner adds a block and receives block rewards + fees.",
     },
     {
-        q: "How does Ymir Hosting ensure the security of investments in mining?",
+        q: "How does EcomineX Hosting ensure the security of investments in mining?",
         a: "Physical access controls, 24/7 monitoring, redundant power, and strict firmware policies. Revenue wallets are non-custodial so you retain control of proceeds.",
     },
     {
@@ -18,7 +18,7 @@ const FAQS: QA[] = [
         a: "ROI depends on hardware efficiency, power rate, network difficulty, price, uptime, and pool fees. We provide per-site calculators with conservative assumptions.",
     },
     {
-        q: "What is the minimum investment duration with Ymir Hosting?",
+        q: "What is the minimum investment duration with EcomineX Hosting?",
         a: "Typical hosting terms range 6–12 months; earlier exits are possible subject to de-rack and logistics fees.",
     },
     {
@@ -26,7 +26,7 @@ const FAQS: QA[] = [
         a: "With efficient hardware and competitive electricity, yes—though profitability is volatile. Hedging and smart curtailment strategies help smooth returns.",
     },
     {
-        q: "How can I get started cryptocurrency mining with Ymir Hosting?",
+        q: "How can I get started cryptocurrency mining with EcomineX Hosting?",
         a: "Choose a site, select machines, sign the hosting agreement, and fund the order. We handle deployment; you track performance in the dashboard.",
     },
 ];

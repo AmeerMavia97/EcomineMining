@@ -11,10 +11,10 @@ type Loc = {
 };
 
 const LOCATIONS: Loc[] = [
-    { id: "uae", label: "UAE", x: 94, y: 56, stats: { electricity: "0.06 € / kWh", climate: "Dry and hot", lead: "30 days" } },
-    { id: "usa", label: "USA", x: 27, y: 17, stats: { electricity: "0.10–0.14 € / kWh", climate: "Varies by state", lead: "20–45 days" } },
-    { id: "russia", label: "Russia", x: 85, y: 24, stats: { electricity: "0.05–0.07 € / kWh", climate: "Cold/continental", lead: "40–60 days" } },
-    { id: "oman", label: "Oman", x: 96, y: 60, stats: { electricity: "0.07 € / kWh", climate: "Hot desert", lead: "25–35 days" } },
+    { id: "uae", label: "Canada", x: 94, y: 56, stats: { electricity: "0.06 € / kWh", climate: "Dry and hot", lead: "30 days" } },
+    { id: "usa", label: "UAE", x: 27, y: 17, stats: { electricity: "0.10–0.14 € / kWh", climate: "Varies by state", lead: "20–45 days" } },
+    { id: "russia", label: "Kazakhstan", x: 85, y: 24, stats: { electricity: "0.05–0.07 € / kWh", climate: "Cold/continental", lead: "40–60 days" } },
+    { id: "oman", label: "USA", x: 96, y: 60, stats: { electricity: "0.07 € / kWh", climate: "Hot desert", lead: "25–35 days" } },
 ];
 
 export default function StrategicSection() {
@@ -90,7 +90,7 @@ export default function StrategicSection() {
                     <h1 className='font-[600] text-[44px] leading-[53px]'><span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent'>Strategic </span>key locations</h1>
                 </div>
                 <p className="mt-3 text-[14px] w-[80%] text-gray-300">
-                    We are operating through mining farms in strategic locations around the world
+                    Global presence for reliable, cost-efficient mining operations
                 </p>
 
                 <div onMouseLeave={() => setActive(null)} className="mt-8 grid grid-cols-2 gap-5 max-w-sm">
