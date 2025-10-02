@@ -18,14 +18,14 @@ import HomeContactSection from "../home2/ContactSection";
 function LandingHome() {
   return (
     <>
-      <div className=" bg-[#101010] overflow-hidden relative px-20">
+      <div className=" bg-[#101010] overflow-hidden relative px-9  sm:px-20">
         <MiningHeroSlider></MiningHeroSlider>
         <Service></Service>
         <HowItsWork></HowItsWork>
 
       </div>
         <MarqueeSection></MarqueeSection>
-      <div className=" bg-[#101010] overflow-hidden relative px-20">
+      <div className=" bg-[#101010] overflow-hidden relative px-9  sm:px-20">
         <AboutUs></AboutUs>
         <StrategicSection></StrategicSection>
 
@@ -35,12 +35,6 @@ function LandingHome() {
 
         <PhotoStrip />
         <HomeContactSection></HomeContactSection>
-
-        
-        {/* <HeroSection />
-      <SolutionCard/>
-      <ModernAboutSegments/>
-      <Shop  /> */}
       </div>
     </>
   );

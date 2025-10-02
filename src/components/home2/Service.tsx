@@ -67,12 +67,12 @@ const CARDS: Card[] = [
 
 export default function ServicesSection() {
     return (
-        <section className="w-full bg-transparent py-20 relative ">
+        <section className="w-full bg-transparent pt-20 pb-14 sm:py-20 relative ">
             <div className='text-center items-center flex flex-col text-white'>
 
-                <h1 className='font-[600] text-[48px]'>Our <span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent'>Services</span></h1>
+                <h1 className='font-[600] text-[36px] sm:text-[48px]'>Our <span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent'>Services</span></h1>
 
-                <p className='w-[60%] text-[#d2d2d2] text-[14.5px]'>We offer you turnkey solutions for getting started in mining, without having to manage
+                <p className='sm:w-[60%] text-[#d2d2d2] text-[12.5px] sm:text-[14.5px]'>We offer you turnkey solutions for getting started in mining, without having to manage
 
                     the purchase, installation, management and maintenance of the machines.</p>
 
@@ -82,7 +82,7 @@ export default function ServicesSection() {
                     {CARDS.map((card, i) => (
                         <article
                             key={i}
-                            className="relative overflow-hidden rounded-3xl h-[350px] bg-gradient-to-b from-[#1a1a1a] to-[#111] py-12 px-9 shadow-[0_8px_30px_rgb(0,0,0,0.3)] "
+                            className="relative overflow-hidden rounded-3xl h-[300px] sm:h-[350px] bg-gradient-to-b from-[#1a1a1a] to-[#111] py-12 px-9 shadow-[0_8px_30px_rgb(0,0,0,0.3)] "
                         >
                             <div>
                                 <img className="absolute -right-20 top-14 opacity-25" src={card.bgImg} alt="" />
@@ -92,21 +92,14 @@ export default function ServicesSection() {
 
 
                             <h3 className="relative z-10 mb-4 leading-tight  font-extrabold tracking-tight text-white">
-                                <span className="block text-[32px] leading-[36px] ">{card.titleTop} </span>
-                                <span className="block text-[32px] text-green-500">{card.titleBottom}</span>
+                                <span className=" text-[29px] sm:text-[32px] leading-[36px] ">{card.titleTop} </span>
+                                <span className=" text-[29px] sm:text-[32px] text-green-500">{card.titleBottom}</span>
                             </h3>
 
                             <ul className="relative z-10 space-y-4">
-                                {/* {card.bullets.map((b, j) => ( */}
                                     <li className="pl-0">
-                                        {/* green dot */}
-                                        {/* <span className="absolute ml-[-18px] mt-3 inline-block h-1.5 w-1.5 rounded-full bg-green-500" />
-                                        <p className="text-white text-[16px] font-semibold mb-2 leading-[19px]">
-                                            {b.title}
-                                        </p> */}
                                         <p className="text-gray-300 leading-snug text-[12.5px]">{card.description}</p>
                                     </li>
-                                {/* ))} */}
                             </ul>
                         </article>
                     ))}
@@ -114,7 +107,7 @@ export default function ServicesSection() {
             </div>
             <div className='absolute overflow-hidden bg-[#22c55e] -right-10 bottom-16 blur-[139px]  h-[350px] w-[208px]'></div>
             <div className="items-center flex justify-center mt-10">
-                <button className="!font-semibold border-[1px] px-7 py-3 text-[13.5px] rounded-full border-green-500 text-green-500">Calculate my Profits</button>
+                <button className="!font-semibold border-[1px] px-7 py-3 text-[12.5px] sm:text-[13.5px] rounded-full border-green-500 text-green-500">Calculate my Profits</button>
             </div>
         </section>
     );

@@ -96,16 +96,16 @@ export default function PhotoStrip() {
   }, []);
 
   return (
-    <section className="w-full py-10 px-16 relative">
+    <section className="w-full py-10 pl-5 pr-3.5 sm:px-16 relative">
       {/* header */}
           <div className='absolute overflow-hidden bg-[#22c55e]  blur-[139px]  -left-10 h-[120px] w-[120px]'></div>
       <div className="flex flex-col items-center text-center">
-        <h1 className="text-white font-[600] text-[44px] leading-[53px]">
+        <h1 className="text-white font-[600] text-[36px] sm:text-[44px] leading-[53px]">
           Follow <span className="bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent">Us</span>
         </h1>
-        <p className="mt-2 text-[14px] text-gray-300">Learn more about us on Instagram!</p>
+        <p className="mt-2 text-[13px] sm:text-[14px] text-gray-300">Learn more about us on Instagram!</p>
         <div className="mt-4">
-          <button className="font-semibold border px-6 py-2.5 text-[13.5px] rounded-full border-green-500 text-green-500">
+          <button className="font-semibold border px-6 py-2.5 text-[13px] sm:text-[13.5px] rounded-full border-green-500 text-green-500">
             Follow
           </button>
         </div>
@@ -142,7 +142,7 @@ export default function PhotoStrip() {
             <li
               key={i}
               data-card
-              className="relative snap-start shrink-0 w-[225px] h-[225px] rounded-3xl overflow-hidden bg-[#181616] mx-[11.5px]"
+              className="relative snap-start shrink-0 w-[260px] sm:w-[225px] h-[225px] rounded-3xl overflow-hidden bg-[#181616] mx-[11.5px]"
             >
               <div className="bg-[#0000003e] absolute inset-0 z-10" />
               <Image

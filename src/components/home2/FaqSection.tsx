@@ -54,7 +54,7 @@ function Item({ qa }: { qa: QA }) {
                 aria-controls={id}
                 className="flex w-full items-center justify-between gap-6 py-5 text-left"
             >
-                <h3 className="text-[18.5px] leading-[25px] font-[500] text-white">
+                <h3 className="text-[15px] leading-[22px] sm:text-[18.5px] sm:leading-[25px] font-[500] text-white">
                     {qa.q}
                 </h3>
                 <span
@@ -63,7 +63,7 @@ function Item({ qa }: { qa: QA }) {
                     aria-hidden
                 >
                     {/* chevron */}
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none">
                         <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </span>
@@ -76,7 +76,7 @@ function Item({ qa }: { qa: QA }) {
                 className="overflow-hidden transition-[max-height,opacity] duration-300 ease-out"
                 style={{ maxHeight: maxH, opacity: open ? 1 : 0 }}
             >
-                <p className="pb-6 pl-1 text-[13.5px] text-gray-300">
+                <p className="pb-6 pl-1 text-[12.5px] sm:text-[13.5px] text-gray-300">
                     {qa.a}
                 </p>
             </div>
@@ -96,20 +96,20 @@ export default function FAQSection() {
          
             <div className="relative z-50">
                 {/* header row */}
-                <div className="mb-10 flex items-center justify-between gap-6">
+                <div className="mb-7 sm:mb-10 sm:flex items-center justify-between gap-6">
                     <div>
-                        <h1 className="text-white font-[600] text-[44px] leading-[53px]">
+                        <h1 className="text-white font-[600] text-[35px] sm:text-[44px] leading-[53px]">
                             <span className="bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent"> FAQs</span>
                         </h1>
-                        <p className="mt-2 text-[14px] w-[75%] text-gray-300">Find the most frequently asked questions about bitcoin mining and our hosting.</p>
+                        <p className="mt-2 text-[13px] sm:text-[14px] sm:w-[75%] text-gray-300">Find the most frequently asked questions about bitcoin mining and our hosting.</p>
                     </div>
-                    <button className="font-semibold border px-6 py-2.5 text-[13.5px] rounded-full border-green-500 text-green-500">
+                    <button className="font-semibold border px-6 py-2.5 text-[12.5px] sm:text-[13.5px] rounded-full border-green-500 text-green-500 mt-4 sm:mt-0">
                         Learn More
                     </button>
                 </div>
 
                 {/* two columns */}
-                <div className="grid grid-cols-1 gap-20 lg:grid-cols-2">
+                <div className="grid grid-cols-1 gap-5 sm:gap-20 lg:grid-cols-2">
                     <div role="list" className="space-y-6">
                         {left.map((qa, i) => <Item key={i} qa={qa} />)}
                     </div>

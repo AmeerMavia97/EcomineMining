@@ -105,18 +105,18 @@ export default function Testimonials() {
     }, [paused, maxIndex, step]);
 
     return (
-        <section className="w-full bg-[#111] py-16">
+        <section className="w-full bg-[#111] py-9 sm:py-16">
              <div className='absolute overflow-hidden bg-[#22c55e]  blur-[139px]  -right-10 h-[180px] w-[180px]'></div>
             <div className="">
                 <div className="text-center">
-                    <h1 className="text-white font-[600] text-[48px] leading-[53px]"> Testimonials
+                    <h1 className="text-white font-[600] text-[34px] sm:text-[48px] leading-[53px]"> Testimonials
                         <span className="bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent"> </span>
                     </h1>
-                    <div className="mt-2.5 inline-flex items-center gap-4">
+                    <div className="mt-2.5  inline-flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
                         <div>
                             <img className="w-28" src="/trustpilot-icon.webp" alt="" />
                         </div>
-                        <p className="text-white text-[15px] font-semibold">
+                        <p className="text-white text-[13px] sm:text-[15px] font-semibold">
                             4.7 / 5 stars on TrustPilot
                         </p>
                     </div>
@@ -130,24 +130,7 @@ export default function Testimonials() {
                     onTouchStart={() => setPaused(true)}
                     onTouchEnd={() => setPaused(false)}
                 >
-                    {/* <button
-                        onClick={() => go(-1)}
-                        aria-label="Previous"
-                        className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-3 backdrop-blur hover:bg-black/60"
-                    >
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                            <path d="M15 6l-6 6 6 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button>
-                    <button
-                        onClick={() => go(1)}
-                        aria-label="Next"
-                        className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/40 p-3 backdrop-blur hover:bg-black/60"
-                    >
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                            <path d="M9 6l6 6-6 6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </button> */}
+                    
                     <div className="overflow-hidden rounded-[28px]">
                         <ul
                             className="flex items-stretch"
@@ -172,7 +155,7 @@ export default function Testimonials() {
                                     </div>
 
                                     {/* quote */}
-                                    <p className=" text-[14px] leading-[22px] text-gray-200">
+                                    <p className=" text-[13.5px] sm:text-[14px] leading-[22px] text-gray-200">
                                         {t.text}
                                     </p>
 

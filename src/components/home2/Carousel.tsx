@@ -27,20 +27,20 @@ export default function Carousel() {
     }, []);
 
     return (
-        <div className="relative w-max abol" >
+        <div className="relative w-[100%] sm:w-max abol" >
 
             <div className="flex justify-end gap-3 mb-4">
                 <button
                     onClick={prevSlide}
                     className=" bg-[#5e7467a4] text-white p-3 rounded-full "
                 >
-                    <ArrowLeft className="size-5.5" />
+                    <ArrowLeft className="size-4.5 sm:size-5.5" />
                 </button>
                 <button
                     onClick={nextSlide}
                     className="  bg-[#5e7467a4] text-white p-3 rounded-full"
                 >
-                    <ArrowRight className="size-5.5" />
+                    <ArrowRight className="size-4.5 sm:size-5.5" />
                 </button>
             </div>
             <AnimatePresence mode="wait">
@@ -57,7 +57,7 @@ export default function Carousel() {
                         alt={`carousel-${index}`}
                         width={550}
                         height={300}
-                        className="rounded-xl w-[650px] h-[440px]"
+                        className="rounded-xl w-[100%] h-[250px] sm:w-[650px] sm:h-[440px]"
                         priority
                     />
                 </motion.div>

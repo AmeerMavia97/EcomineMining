@@ -60,18 +60,18 @@ export default function AboutUs() {
                         <div className='text-transparent ml-5 z-20  bg-green-600 px-5 py-5 rounded-full'></div>
                     </div>
                     <div className=' text-white'>
-                        <h1 className='font-[600] w-[80%] text-[44px] leading-[53px]'>About <span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent '>Ecomine </span> Hosting</h1>
+                        <h1 className='font-[600] sm:w-[80%] text-[34px] leading-[44px] sm:text-[44px] sm:leading-[53px]'>About <span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent '>Ecomine </span> Hosting</h1>
                     </div>
-                    <p className=" text-[16px] leading-[19px] w-[80%] text-gray-300 ">
+                    <p className="text-[14px] sm:text-[16px] leading-[19px] sm:w-[80%] text-gray-300 ">
                         For several years now, we&apos;ve been exploring the four corners of the globe…
                     </p>
                     <div className="mt-2">
-                        <button className="!font-semibold border-[1px] px-7 py-3 text-[13.5px] rounded-full border-green-500 text-green-500">Learn More</button>
+                        <button className="!font-semibold border-[1px] px-7 py-3 text-[12.5px] sm:text-[13.5px] rounded-full border-green-500 text-green-500">Learn More</button>
                     </div>
                 </article>
 
                 {/* RIGHT: frame with BG parallax */}
-                <div className="relative h-[400px] w-full overflow-hidden rounded-[10px] border border-white/10">
+                <div className="relative h-[320px] sm:h-[400px] w-full overflow-hidden rounded-[10px] border border-white/10">
                     {/* dark overlay like your design */}
                     <div className="pointer-events-none absolute inset-0 z-10 bg-black/20" />
                     {/* BG layer we move */}

@@ -89,7 +89,7 @@ const HomeFooter = () => {
         <footer className="bg-[#191919] text-white">
             <div className="">
                 {/* Top Section */}
-                <div className="grid gap-8 md:grid-cols-4 bg-[#191919] pt-14 pb-20 px-16">
+                <div className="grid gap-8 md:grid-cols-4 bg-[#191919] pt-14 pb-14 sm:pb-20 px-10 sm:px-16">
                     {/* Brand Section */}
                     <div className="flex flex-col items-start">
                         <Link href="/" className="flex items-center space-x-2">
@@ -101,7 +101,7 @@ const HomeFooter = () => {
                     </div>
 
                     {/* Footer Links */}
-                    <div className="col-span-2 grid grid-cols-3 gap-0">
+                    <div className="col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-5 sm:gap-0">
                         {footerLinks.map((section, index) => (
                             <div key={index}>
                                 <ul className="space-y-2">
@@ -161,7 +161,7 @@ const HomeFooter = () => {
                 {/* Bottom Section */}
                 <div className="border-t border-gray-800 py-6">
                     <div className="flex flex-col items-center justify-center md:flex-row">
-                        <p className="text-sm text-center text-white font-[600] md:mb-0">
+                        <p className="text-sm text-center text-white font-[600] md:mb-0 px-10 sm:px-0">
                             © {new Date().getFullYear()} EcomineX Technologies. All Rights
                             Reserved.
                         </p>

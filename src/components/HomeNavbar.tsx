@@ -67,14 +67,14 @@ const HomeNavbar = () => {
     ];
 
     return (
-        <header className="bg-[#101010] text-white px-20">
+        <header className="bg-[#101010] text-white sm:px-20">
             {/* Desktop Navigation */}
             <div className="hidden md:block">
                 <div className="">
                     <div className="flex items-center justify-between py-7 ">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-2">
-                            <span className="text-3xl font-bold">Ecomine</span>
+                            <span className="text-[30px] sm:text-3xl font-bold">Ecomine</span>
                             <div className="flex h-8.5 w-7 items-center justify-center rounded-full bg-green-500">
                                 <span className="text-xl font-bold">X</span>
                             </div>
@@ -136,51 +136,55 @@ const HomeNavbar = () => {
             {/* Mobile Navigation */}
             <div className="md:hidden">
                 {/* Mobile Header */}
-                <div className="flex items-center justify-between px-4 py-4">
-                    <button
-                        onClick={() => setIsMenuOpen(true)}
-                        className="text-white focus:outline-none"
-                    >
-                        <Menu className="h-6 w-6" />
-                    </button>
+                <div className="flex items-center justify-between px-4 py-5 ">
+
 
                     {/* Center Logo */}
                     <Link href="/" className="flex items-center space-x-2 ml-5">
-                        <span className="text-3xl font-bold">Ecomine</span>
+                        <span className="text-2xl font-bold">Ecomine</span>
                         <div className="flex -ml-2 h-8 w-7 items-center justify-center rounded-full bg-green-500">
                             <span className="text-xl font-bold">X</span>
                         </div>
                     </Link>
 
-                    {/* User Menu Items */}
-                    {isAuthenticated ? (
-                        <div className="flex items-center space-x-3">
+                    <div className="flex gap-4 items-center ">
+                        {/* User Menu Items */}
+                        {isAuthenticated ? (
+                            <div className="flex items-center space-x-3">
+                                <Link
+                                    href="/profile"
+                                    className="text-sm font-medium text-white hover:text-green-500"
+                                >
+                                    <span className="text-green-500 font-bold l">Profile</span>
+                                </Link>
+                                <button
+                                    onClick={handleLogout}
+                                    className="text-sm font-medium text-white hover:text-green-500"
+                                >
+                                    Logout
+                                </button>
+                            </div>
+                        ) : (
                             <Link
-                                href="/profile"
-                                className="text-sm font-medium text-white hover:text-green-500"
+                                href="/auth/signin"
+                                className="transition-colors hover:text-green-500 text-[12px] font-[550] text-[#dedede] tracking-[0.5px]"
                             >
-                                <span className="text-green-500 font-bold l">Profile</span>
+                                LOGIN
                             </Link>
-                            <button
-                                onClick={handleLogout}
-                                className="text-sm font-medium text-white hover:text-green-500"
-                            >
-                                Logout
-                            </button>
-                        </div>
-                    ) : (
-                        <Link
-                            href="/auth/signin"
-                            className="text-sm font-medium text-white hover:text-green-500"
+                        )}
+
+                        <button
+                            onClick={() => setIsMenuOpen(true)}
+                            className="text-white focus:outline-none"
                         >
-                            Login
-                        </Link>
-                    )}
+                            <Menu className="h-6 w-6" />
+                        </button>
+                    </div>
                 </div>
 
                 {/* Mobile Menu Overlay */}
                 {isMenuOpen && (
-                    <div className="fixed inset-0 z-50 overflow-y-auto bg-gray-900">
+                    <div className="fixed inset-0 z-[99999] overflow-y-auto bg-gray-900 ">
                         <div className="p-4">
                             <div className="flex justify-end">
                                 <button
@@ -191,15 +195,8 @@ const HomeNavbar = () => {
                                 </button>
                             </div>
 
-                            <div className="mt-4">
-                                <input
-                                    type="text"
-                                    placeholder="Search for products"
-                                    className="w-full rounded-lg bg-gray-800 p-3 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500"
-                                />
-                            </div>
 
-                            <nav className="mt-6 flex flex-col space-y-12">
+                            <nav className="mt-16 flex flex-col space-y-1 px-4">
                                 {/* Navigation Links */}
                                 {navLinks.map((link) => (
                                     <Link

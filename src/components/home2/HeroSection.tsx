@@ -87,13 +87,13 @@ const MiningHeroSlider = () => {
 
     return (
         <>
-            <section className=" py-20">
+            <section className="pt-20 pb-10 sm:py-20">
                 <div className="">
-                    <div className="text-white flex flex-col gap-4">
+                    <div className="text-white flex flex-col gap-2 sm:gap-4">
                         <div className="flex items-center justify-between leading-[60px]">
-                            <h1 className="font-[600] text-[60px]">Start Mining Today </h1>
-                            <div className="flex gap-2.5 mt-3">
-                                  <div className='absolute overflow-hidden bg-[#22c55e] -right-10 top-30 blur-[139px]  h-[350px] w-[208px]'></div>
+                            <h1 className="font-[600] text-[38px] leading-[48px] sm:text-[60px]">Start Mining Today </h1>
+                                  <div className='absolute overflow-hidden bg-[#22c55e] -right-30 sm:-right-10 top-30 blur-[139px] h-[250px] w-[170px] sm:h-[350px] sm:w-[208px]'></div>
+                            <div className="hidden sm:flex gap-2.5 mt-3">
 
 
                                 {["Instagram", "Twitter", "LinkedIn"].map((platform , index) => (
@@ -119,16 +119,16 @@ const MiningHeroSlider = () => {
                             </div>
                         </div>
                         <span className="flex items-center gap-2 leading-[40px]">
-                            <span className="w-10  h-1 text-white bg-white"></span>
-                            <h3 className="text-[34px] tracking-tighter font-[500] italic">Turnkey Solution</h3>
+                            <span className="w-4 sm:w-10  h-1 text-white bg-white"></span>
+                            <h3 className="text-[23px] sm:text-[34px] tracking-tighter font-[500] italic">Turnkey Solution</h3>
                         </span>
-                        <p className="text-[15px] w-[40%] leading-[20px]">Your solution for buying, selling, and mining cryptocurrencies</p>
-                        <button className="w-max mt-2 bg-green-500 font-[600] text-[15px] rounded-full px-8 py-2.5">Let&apos;s Start</button>
+                        <p className="text-[13.5px] sm:text-[15px] sm:w-[40%] leading-[20px]">Your solution for buying, selling, and mining cryptocurrencies</p>
+                        <button className="w-max mt-2 bg-green-500 font-[600] text-[14px] sm:text-[15px] rounded-full px-8 py-2.5">Let&apos;s Start</button>
                     </div>
                 </div>
-                <div className="flex items-center mt-14 relative !z-50">
+                <div className="flex flex-col-reverse sm:flex-row items-center mt-7 sm:mt-14 relative !z-50">
                      <div className='absolute overflow-hidden bg-[#22c55e]  blur-[139px]  -left-10 h-[180px] w-[208px]'></div>
-                    <div className="grid grid-cols-2 gap-4 mt-4 relative z-50 w-[47%]">
+                    <div className="grid sm:grid-cols-2 gap-4 mt-4 relative z-50 sm:w-[47%]">
                         <div className="bg-[#292929]  py-5.5 rounded-[10px] pl-6 flex flex-col justify-center">
                             <h3 className="text-green-500 font-[550] leading-[38px] text-[30px]">98%</h3>
                             <h6 className="font-[550] text-white text-[16px] leading-[34px]">Average Uptime</h6>
@@ -141,17 +141,17 @@ const MiningHeroSlider = () => {
                             <p className="font-[400] text-[#d5d5d5] text-[13.5px] w-[80%]  leading-[18px]">The best rates on the market.</p>
                         </div>
                         <div className="bg-[#292929] py-6 rounded-[10px] flex flex-col gap-1  pl-6">
-                            <h3 className="text-green-500 font-[550] leading-[38px] text-[28px]">10MW</h3>
+                            <h3 className="text-green-500 font-[550] leading-[38px]  text-[25px] sm:text-[28px]">10MW</h3>
                             <h6 className="font-[550] text-white text-[16.5px] leading-[22px] w-[%]">Under Management</h6>
                             <p className="font-[400] text-[#d5d5d5] text-[13.5px] w-[80%]  leading-[18px]">An ever-expanding portfolio of data centers.</p>
                         </div>
                         <div className="bg-[#292929]  py-5.5 rounded-[10px] pl-6 flex flex-col justify-center">
-                            <h3 className="text-green-500 font-[550] leading-[38px] text-[30px]">20,000+</h3>
+                            <h3 className="text-green-500 font-[550] leading-[38px] text-[27px] sm:text-[30px]">20,000+</h3>
                             <h6 className="font-[550] text-white text-[16.5px] leading-[34px]"> Machines Sold</h6>
                             <p className="font-[400] text-[#d5d5d5] text-[13.5px] w-[80%]  leading-[18px]">We sell and deliver worldwide</p>
                         </div>
                     </div>
-                    <div className="absolute right-0 -top-28 z-20">
+                    <div className="relative mb-5 sm:mb-0 sm:absolute right-0 sm:-top-28 z-20">
                         <Carousel />
                     </div>
                 </div>

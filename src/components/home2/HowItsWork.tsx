@@ -51,17 +51,17 @@ function StepCard({
             )}
         >
             {/* faint big step number */}
-            <span className="pointer-events-none absolute -top-7 -right-7 text-[70px] font-extrabold leading-none text-white/5 select-none">
+            <span className="pointer-events-none absolute -top-4 sm:-top-7 right-0 sm:-right-7 text-[64px] sm:text-[70px] font-extrabold leading-none text-white/5 select-none">
                 {String(index + 1).padStart(2, "0")}
             </span>
-            <span className="pointer-events-none absolute  -right-10 top-20 text-[70px] font-extrabold leading-none text-white/5 select-none border-[1px] border-green-500 h-8">
+            <span className="pointer-events-none absolute right-0 sm:-right-10 top-20 text-[70px] font-extrabold leading-none text-white/5 select-none border-[1px] border-green-500 h-8">
                 
             </span>
 
-            <h3 className="relative z-10 mb-3 text-[23px] w-[80%] font-extrabold leading-tight text-[#f5f5f5]">
+            <h3 className="relative z-10 mb-3 text-[21px] sm:text-[23px] w-[80%] font-extrabold leading-tight text-[#f5f5f5]">
                 {step.title}
             </h3>
-            <p className="relative z-10 text-[13.2px] leading-[17px] text-[#b3b3b3]">
+            <p className="relative z-10 text-[13px] sm:text-[13.2px] leading-[17px] text-[#b3b3b3]">
                 {step.body}
             </p>
         </article>
@@ -72,7 +72,7 @@ export default function HowItsWork() {
     return (
         <section className="w-full bg-[#121212] py-14 px-2">
             <div className=' text-white'>
-                <h1 className='font-[600] text-[48px]'>How Its <span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent'>Works</span></h1>
+                <h1 className='font-[600] text-[34px] sm:text-[48px]'>How Its <span className='bg-gradient-to-r from-green-500 to-green-500 bg-clip-text text-transparent'>Works</span></h1>
             </div>
 
             <div className="mt-10">
@@ -100,7 +100,7 @@ export default function HowItsWork() {
             </div>
 
             <div className="items-center flex justify-center mt-16">
-                <button className="!font-semibold border-[1px] px-7 py-3 text-[13.5px] rounded-full border-green-500 text-green-500">Talk to an expert</button>
+                <button className="!font-semibold border-[1px] px-7 py-3 text-[12.5px] sm:text-[13.5px] rounded-full border-green-500 text-green-500">Talk to an expert</button>
             </div>
 
             <div className='absolute overflow-hidden bg-[#22c55e]  blur-[139px]  -left-10 h-[120px] w-[160px]'></div>
